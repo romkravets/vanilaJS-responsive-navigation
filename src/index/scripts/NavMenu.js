@@ -17,16 +17,10 @@ export class NavMenu {
       this.rootElenent.appendChild(this.items);
 
       for(let i = 0; i < this.options.length; i++) {
-          this.li = document.createElement('li');
-          this.option = document.createElement('a');
-   
-          this.li.classList.add('nav__item');
-          this.option.classList.add('nav__link');
-          this.option.setAttribute("href", "#");
-            this.option.textContent = this.options[i];
-   
-         this.items.appendChild(this.li);
-         this.li.appendChild(this.option);
+         const { title, link } = this.options[i];
+         const option = `<li class="nav__item">
+         <a class="nav__link" href=${link}>${title}</a></li>`;
+         this.items.innerHTML += option;
        }
    }
 }

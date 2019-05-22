@@ -1,5 +1,24 @@
 import './index.scss';
 import { NavMenu } from './scripts/NavMenu';
 
-new NavMenu(document.querySelector('#navigation'), [ "HOME", "PORTFOLIO", "SERVICE", "CONTACT US"]);
+const navLinks = [
+   {
+      title: "HOME",
+      link: "https://google.com"
+   },
+   {
+      title: "PORTFOLIO",
+      link: "https://google.com"
+   },
+   {
+      title: "SERVICE",
+      link: "https://google.com"
+   },
+   {
+      title:"CONTACT US",
+      link: "https://google.com"
+   },
+]
+
+new NavMenu(document.querySelector('#navigation'), navLinks);
 
