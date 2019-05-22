@@ -6,6 +6,7 @@ export class NavMenu {
       this.options = options;
       this.items;
       this.item;
+      this.toggleBtn;
       this.li;
       this.render();
    }
@@ -22,5 +23,15 @@ export class NavMenu {
          <a class="nav__link" href=${link}>${title}</a></li>`;
          this.items.innerHTML += option;
        }
+
+       this.toggleBtn = `
+       <div class="mobile-controls">
+         <div class="burger">
+            <span class="burger__raw"></span>
+            <span class="burger__raw"></span>
+         </div>
+       </div>
+      `
+       this.rootElenent.innerHTML += this.toggleBtn;
    }
 }
