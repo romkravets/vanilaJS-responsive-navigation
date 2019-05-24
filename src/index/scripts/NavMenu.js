@@ -1,8 +1,5 @@
 import '../styles/NavMenu.scss';
 
-// const  btn = document.querySelector('.burger');
-// const nav = document.querySelector('.nav');
-
 export class NavMenu {
    constructor(rootElenent, options) {
       this.rootElenent = rootElenent;
@@ -12,7 +9,6 @@ export class NavMenu {
       this.item;
       this.toggleBtnBox;
       this.burger;
-      this.li;
       this.render();
    }
 
@@ -51,7 +47,4 @@ export class NavMenu {
       })
 
    }
-
-
-
 }
