@@ -27,8 +27,9 @@ export class NavMenu {
        this.toggleBtn = `
        <div class="mobile-controls">
          <div class="burger">
-            <span class="burger__raw"></span>
-            <span class="burger__raw"></span>
+            <div class="burger__row"></div>
+            <div class="burger__row"></div>
+            <div class="burger__row"></div>
          </div>
        </div>
       `
