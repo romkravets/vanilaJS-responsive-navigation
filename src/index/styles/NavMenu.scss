@@ -1,3 +1,5 @@
+@import '../styles/variables.scss';
+
 .nav {
    display: flex;
    position: fixed;
@@ -14,9 +16,6 @@
    }
    &__item {
       padding: 1rem 0;
-      &:hover {
-         color: #31CC9A;
-      }
    }
    &__link {
       color:rgb(51, 51, 51);
@@ -36,7 +35,7 @@
 .burger__row {
   width: 35px;
   height: 5px;
-  background-color: #333;
+  background-color: rgb(51, 51, 51);
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -65,7 +64,7 @@
          top: 70px;
          left: 0;
          display: block;
-         background-color: transparent;
+         background-color: rgba(226, 239, 245, 0.85);
          padding: 0 34px;
          height: calc(100vh - 70px);
          transform-origin: top center;
@@ -84,37 +83,3 @@
       opacity: 1;
     }
 }
-
-$color-primary: #40C9CC;
-$color-secondary: #0D4662;
-$white: #fff;
-$sm: 15em;
-$lg: 32em;
-
-.main-section {
-   color: $white;
-   height: 100vh;
-   background-image: radial-gradient(farthest-corner at 45px 45px , $color-primary 0%, #31CC9A 100%);
-   padding: 10rem 1em;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-    h1 {
-      margin: 0;
-      font-size: 6rem;
-    }
-    p {
-       font-size: 2rem;
-       padding: 2rem;
-    }
-}
-
-.btn {
-   border: 0;
-   border-radius: 2px;
-   padding: 1em 2rem;
-   background-color: $white;
-   color: $color-primary;
-   outline: none;
- }

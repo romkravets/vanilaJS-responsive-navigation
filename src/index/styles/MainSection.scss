@@ -1,0 +1,38 @@
+@import '../styles/variables.scss';
+
+.main-section {
+   color: $white;
+   height: 100vh;
+   background-image: radial-gradient(farthest-corner at 45px 45px , $color-primary 0%, #31CC9A 100%);
+   padding: 10rem 1em;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+    &__title {
+      margin: 0;
+      font-size: 6rem;
+    }
+    p {
+       font-size: 2rem;
+       padding: 1rem 0 2rem 0;
+    }
+}
+
+@media (max-width: 454px) {
+   .main-section {
+      &__title {
+         font-size: 4rem;
+      }
+   }
+}
+
+.btn {
+   border: 0;
+   border-radius: 2px;
+   padding: 1em 2rem;
+   background-color: $white;
+   color: $color-primary;
+   outline: none;
+ }
+
