@@ -23,12 +23,14 @@ export class NavMenu {
 
       this.rootElenent.appendChild(this.items);
 
-      for(let i = 0; i < this.options.length; i++) {
-         const { title, link } = this.options[i];
-         const option = `<li class="nav__item">
-         <a class="nav__link" href=${link}>${title}</a></li>`;
+      this.options.forEach(data => {
+         const option = `
+             <li class="nav__item">
+               <a class="nav__link" href=${data.link}>${data.title}</a>
+             </li>
+             `;
          this.items.innerHTML += option;
-       }
+      });
 
        this.toggleBtnBox = `
        <div class="mobile-controls">

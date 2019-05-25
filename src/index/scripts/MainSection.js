@@ -5,6 +5,7 @@ export class MainSection {
       this.rootSection = rootSection;
       this.dataSection = dataSection;
       this.sectionTitle;
+      this.buttonCall;
       this.render();
    }
 
@@ -16,6 +17,14 @@ export class MainSection {
          <button class="btn">${data.buttonText}</button>
       `
       this.rootSection.innerHTML += this.sectionTitle;
+      });
+
+      this.buttonCall = document.querySelectorAll('.btn');
+
+      this.buttonCall.forEach((call) => {
+         call.addEventListener('click', () => {
+            console.log('click button');
+         })
       });
    }
 }

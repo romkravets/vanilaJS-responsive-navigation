@@ -21,15 +21,23 @@ const navLinks = [
    },
 ];
 
-const dataSection = [
+const firstDataSection = [
    {
       titleSection: "Responsive Navigation",
-      description: "Simple and written in vanilla JavaScript.",
+      description: "Simple vanilla JavaScript.",
+      buttonText: "Call me"
+   }
+];
+
+const secondDataSection = [
+   {
+      titleSection: "Second Section Daynemyc JS",
+      description: "Vanilla JavaScript Section. Dynemic change description",
       buttonText: "Call me"
    }
 ];
 
 new NavMenu(document.querySelector('#navigation'), navLinks);
-new MainSection(document.querySelector('#firstSection'), dataSection);
-new MainSection(document.querySelector('#secondSection'), dataSection);
+new MainSection(document.querySelector('#firstSection'), firstDataSection);
+new MainSection(document.querySelector('#secondSection'), secondDataSection);
 
