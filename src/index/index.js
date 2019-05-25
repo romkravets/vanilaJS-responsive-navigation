@@ -31,7 +31,7 @@ const firstDataSection = [
 
 const secondDataSection = [
    {
-      titleSection: "Second Section Daynemyc JS",
+      titleSection: "Second Section Daynemic JS",
       description: "Vanilla JavaScript Section. Dynemic change description",
       buttonText: "Call me"
    }
