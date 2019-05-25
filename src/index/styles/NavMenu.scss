@@ -14,6 +14,9 @@
    }
    &__item {
       padding: 1rem 0;
+      &:hover {
+         color: #31CC9A;
+      }
    }
    &__link {
       color:rgb(51, 51, 51);
@@ -62,14 +65,14 @@
          top: 70px;
          left: 0;
          display: block;
-         background-color: rgb(255, 253, 253);
+         background-color: transparent;
          padding: 0 34px;
          height: calc(100vh - 70px);
          transform-origin: top center;
       }
       &__link {
          padding: 1rem 0;
-         border-bottom: 1px solid rgb(255, 255, 255);
+         border-bottom: 1px solid rgb(14, 12, 12);
          width: 100%;
       }
    }

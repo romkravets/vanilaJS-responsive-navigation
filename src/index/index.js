@@ -1,24 +1,26 @@
 import './index.scss';
 import { NavMenu } from './scripts/NavMenu';
+import { MainSection } from './scripts/MainSection';
 
 const navLinks = [
    {
       title: "HOME",
-      link: "https://google.com"
+      link: "#"
    },
    {
       title: "PORTFOLIO",
-      link: "https://google.com"
+      link: "https://github.com/romkravets"
    },
    {
       title: "SERVICE",
-      link: "https://google.com"
+      link: "https://github.com/romkravets"
    },
    {
       title:"CONTACT US",
-      link: "https://google.com"
+      link: "https://linkedin.com/in/romkravets"
    },
 ]
 
 new NavMenu(document.querySelector('#navigation'), navLinks);
+new MainSection();
 
